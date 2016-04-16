@@ -7,4 +7,7 @@ Whatever you input, it just output xxxx-xxx-xxx.
 
 不管你輸入什麼就是輸出xxxx-xxx-xxx。
 
+## pod
+```pod "FCTextField"```
+
 ![](http://i.imgur.com/vcZtcuZ.png?2)
