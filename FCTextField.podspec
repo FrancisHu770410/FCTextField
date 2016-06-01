@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name	= "FCTextField"
-	s.version = "1.0.0"
+	s.version = “1.0.1”
 	s.summary = "一個可以輸出台灣電話號碼格式的TextField"
 	s.description = <<-DESC
 			 不管輸入什麼格式文字或進行任何刪除操作都會輸出台灣電話號碼格式
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 	s.author = { "FrancisHu770410" => "FrancisHu770410@gmail.com" }
 	s.source = { :git => "https://github.com/FrancisHu770410/FCTextField.git", :tag => s.version.to_s }
 
-	s.platform = :ios, '8.4'
+	s.platform = :ios, ‘8.0’
 	s.requires_arc = true
 
 	s.source_files = 'FCTextField/*'
