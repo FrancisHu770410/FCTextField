@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name	= "FCTextField"
-	s.version = “1.0.1”
+	s.version = “1.0.2”
 	s.summary = "一個可以輸出台灣電話號碼格式的TextField"
 	s.description = <<-DESC
 			 不管輸入什麼格式文字或進行任何刪除操作都會輸出台灣電話號碼格式
