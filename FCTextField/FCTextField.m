@@ -26,18 +26,30 @@
 
 @implementation FCTextField
 
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self resetAction];
+    }
+    return self;
+}
+
 - (instancetype) initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _removeToThree = false;
-        _removeToSeven = false;
-        _isCut = false;
-        _cutDash = false;
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;
-        [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+        [self resetAction];
     }
     return self;
+}
+
+- (void) resetAction {
+    _removeToThree = false;
+    _removeToSeven = false;
+    _isCut = false;
+    _cutDash = false;
+    self.delegate = self;
+    self.keyboardType = UIKeyboardTypeNumberPad;
+    [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void) textFieldDidChange:(UITextField*)textField {
